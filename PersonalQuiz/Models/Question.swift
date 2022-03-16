@@ -66,13 +66,13 @@ enum Animal: Character {
     var definition: String {
         switch self {
         case .dog:
-            return "You are DOG 😃. You like being with friends. You surround yourself with people you like and are always ready to help."
+            return "You are - DOG 😃. You like being with friends. You surround yourself with people you like and are always ready to help."
         case .cat:
-            return "You are CAT 😃. You're on your mind. Love to walk by yourself. Do you appreciate loneliness."
+            return "You are - CAT 😃. You're on your mind. Love to walk by yourself. Do you appreciate loneliness."
         case .rabbit:
-            return "You are RABBIT 😃. You like everything soft. You are healthy and full of energy."
+            return "You are - RABBIT 😃. You like everything soft. You are healthy and full of energy."
         case .turtle:
-            return "You are TURTLE 😃. Your strength is in wisdom. Slow and thoughtful wins over long distances."
+            return "You are - TURTLE 😃. Your strength is in wisdom. Slow and thoughtful wins over long distances."
         }
     }
 }
