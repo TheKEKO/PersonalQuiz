@@ -37,7 +37,7 @@ class ResultViewController: UIViewController {
         let sortedAnswerAndAnimal = resultAnimalType.sorted { $0.value > $1.value }
         guard let resultAnswer = sortedAnswerAndAnimal.first?.key else { return }
         
-        resultLabel.text = "You  - \(resultAnswer.rawValue)!"
+        resultLabel.text = "You - \(resultAnswer.rawValue)!"
         textLabel.text = "\(resultAnswer.definition)"
     }
 }
