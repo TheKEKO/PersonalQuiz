@@ -17,19 +17,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="c2E-f8-dmi">
-                                <rect key="frame" x="65" y="406.33333333333331" width="284" height="83.666666666666686"/>
+                                <rect key="frame" x="54.333333333333343" y="406.33333333333331" width="305.33333333333326" height="83.666666666666686"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Какое вы животное?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nl5-eQ-e1w">
-                                        <rect key="frame" x="0.0" y="0.0" width="284" height="33.666666666666664"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which animal are you?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nl5-eQ-e1w">
+                                        <rect key="frame" x="0.0" y="0.0" width="305.33333333333331" height="33.666666666666664"/>
                                         <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uVZ-iO-G0l">
-                                        <rect key="frame" x="79" y="48.666666666666686" width="126" height="35"/>
+                                        <rect key="frame" x="63.333333333333343" y="48.666666666666686" width="179" height="35"/>
                                         <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="20"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Начать опрос"/>
+                                        <state key="normal" title="Start Personal Quiz "/>
                                         <connections>
                                             <segue destination="3Fe-Ff-rvf" kind="presentation" modalPresentationStyle="fullScreen" id="Je0-Nf-dkb"/>
                                         </connections>
@@ -62,7 +62,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="drI-io-f0W" secondAttribute="trailing" constant="16" id="5bF-OW-gQe"/>
                             <constraint firstItem="drI-io-f0W" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="sXT-LH-yhO" secondAttribute="trailing" constant="220" id="5iO-uG-ylp"/>
@@ -83,7 +83,7 @@
             </objects>
             <point key="canvasLocation" x="53" y="116"/>
         </scene>
-        <!--Вопрос №-->
+        <!--Question №-->
         <scene sceneID="iMA-79-eig">
             <objects>
                 <viewController id="9PX-9H-kTu" customClass="QuestionsViewController" customModule="PersonalQuiz" customModuleProvider="target" sceneMemberID="viewController">
@@ -187,10 +187,10 @@
                                             </switch>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LHR-v9-Zn4">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LHR-v9-Zn4" userLabel="To answer">
                                         <rect key="frame" x="0.0" y="188" width="382" height="30"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Ответить"/>
+                                        <state key="normal" title="To answer"/>
                                         <connections>
                                             <action selector="multipleAnswerButtonPressed" destination="9PX-9H-kTu" eventType="touchUpInside" id="OU5-eX-JG6"/>
                                         </connections>
@@ -220,10 +220,10 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wpm-QL-BQb" userLabel="Ответить">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wpm-QL-BQb">
                                         <rect key="frame" x="0.0" y="82.333333333333371" width="382" height="31"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Ответить"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="To answer"/>
                                         <connections>
                                             <action selector="rangedAnswerButtonPressed" destination="9PX-9H-kTu" eventType="touchUpInside" id="W5z-33-llT"/>
                                         </connections>
@@ -260,7 +260,7 @@
                             <constraint firstItem="U0A-26-5zE" firstAttribute="trailing" secondItem="yAo-bQ-Vza" secondAttribute="trailing" id="oor-3q-wER"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Вопрос №" id="PVp-AZ-7nI"/>
+                    <navigationItem key="navigationItem" title="Question №" id="PVp-AZ-7nI"/>
                     <connections>
                         <outlet property="multipleStackView" destination="dkz-8R-PM6" id="sMi-fn-a5Z"/>
                         <outlet property="questionLabel" destination="bom-KJ-CCK" id="CSA-qx-Gu8"/>
@@ -289,7 +289,7 @@
             </objects>
             <point key="canvasLocation" x="1631" y="115"/>
         </scene>
-        <!--Результат-->
+        <!--Result-->
         <scene sceneID="Gi1-n2-Bzg">
             <objects>
                 <viewController id="hxJ-ZT-apC" customClass="ResultViewController" customModule="PersonalQuiz" customModuleProvider="target" sceneMemberID="viewController">
@@ -300,14 +300,14 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gVJ-Id-nfm">
                                 <rect key="frame" x="16" y="404" width="382" height="88.333333333333314"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вы - 🐶!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jfz-ee-uIR">
-                                        <rect key="frame" x="104.00000000000001" y="0.0" width="174.33333333333337" height="60"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You - ❓!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jfz-ee-uIR">
+                                        <rect key="frame" x="95.666666666666671" y="0.0" width="190.66666666666663" height="60"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rcg-aM-gKh">
-                                        <rect key="frame" x="170.33333333333334" y="68" width="41.333333333333343" height="20.333333333333329"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="💬" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rcg-aM-gKh">
+                                        <rect key="frame" x="179.66666666666666" y="68" width="23" height="20.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -323,7 +323,7 @@
                             <constraint firstItem="gVJ-Id-nfm" firstAttribute="leading" secondItem="3kQ-qZ-PRB" secondAttribute="leading" constant="16" id="naS-XW-8zA"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Результат" id="fA5-d1-gS0">
+                    <navigationItem key="navigationItem" title="Result" id="fA5-d1-gS0">
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="wWI-ZQ-3Ud">
                             <connections>
                                 <segue destination="2Md-WK-VgI" kind="unwind" unwindAction="unwindFor:" id="8ec-hc-YEB"/>
@@ -338,7 +338,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c8S-0N-R7I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="2Md-WK-VgI" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2423" y="114"/>
+            <point key="canvasLocation" x="2421.739130434783" y="113.83928571428571"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="od9-Dw-AhF">
@@ -362,6 +362,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
