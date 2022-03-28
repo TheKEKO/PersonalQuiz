@@ -1,5 +1,5 @@
 # PersonalQuiz
-**HomeWork 2.5 PersonalQuiz**
+**PersonalQuiz**
 
 Project: Personality Quiz
 
