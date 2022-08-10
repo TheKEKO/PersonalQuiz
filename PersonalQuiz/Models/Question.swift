@@ -60,7 +60,7 @@ struct Answer {
 enum Animal: Character {
     case dog = "🐕"
     case cat = "🐈‍⬛"
-    case rabbit = "🐇"        
+    case rabbit = "🐇"
     case turtle = "🐢"
     
     var definition: String {

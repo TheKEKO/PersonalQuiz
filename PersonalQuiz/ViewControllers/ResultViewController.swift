@@ -14,7 +14,7 @@ class ResultViewController: UIViewController {
     @IBOutlet var textLabel: UILabel!
     
     var answersChosen: [Answer]!
-  
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true
@@ -29,7 +29,7 @@ class ResultViewController: UIViewController {
         for animal in animalsType {
             if let animalCount = resultAnimalType[animal] {
                 resultAnimalType.updateValue(animalCount + 1, forKey: animal)
-            } else {
+            } else { 
                 resultAnimalType[animal] = 1
             }
         }
@@ -41,8 +41,8 @@ class ResultViewController: UIViewController {
         textLabel.text = "\(resultAnswer.definition)"
     }
 }
-    
-    
-    
+
+
+
 
 
